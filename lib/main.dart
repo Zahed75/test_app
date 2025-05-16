@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/widgets/button.dart';
 import 'package:test_app/widgets/dismissible.dart';
+import 'package:test_app/widgets/drawer.dart';
 import 'package:test_app/widgets/list_grid.dart';
 import 'package:test_app/widgets/row_cols.dart';
 import 'package:test_app/widgets/snackbar.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: DismissibleWidget(),
+      home: DrawerWidget(),
     );
   }
 }
