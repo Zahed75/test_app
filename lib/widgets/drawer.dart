@@ -15,8 +15,36 @@ class DrawerWidget extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 child: Container(
                   color: Colors.white,
-                  padding: EdgeInsets.all(20),
-                  child: Row(children: []),
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 40,
+                        backgroundImage: NetworkImage(
+                          'https://zayanori.com/wp-content/uploads/2025/05/Zayanori_logo-02.png',
+                        ),
+                      ),
+                      SizedBox(width: 5),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Zayanori',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'business.zayanori@gmail.com',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey[900],
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
               ListTile(
