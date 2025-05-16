@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_app/widgets/button.dart';
 import 'package:test_app/widgets/list_grid.dart';
 import 'package:test_app/widgets/row_cols.dart';
+import 'package:test_app/widgets/snackbar.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: ListGrid(),
+      home: SnackBarWidget(),
     );
   }
 }
