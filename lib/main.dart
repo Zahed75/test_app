@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/widgets/alert.dart';
+import 'package:test_app/widgets/bottomNav.dart';
 import 'package:test_app/widgets/bottomSheet.dart';
 import 'package:test_app/widgets/button.dart';
 import 'package:test_app/widgets/dismissible.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: BottomSheetWidget(),
+      home: BottomNaviWidget(),
     );
   }
 }
