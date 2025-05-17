@@ -11,6 +11,7 @@ import 'package:test_app/widgets/image.dart';
 import 'package:test_app/widgets/list_grid.dart';
 import 'package:test_app/widgets/row_cols.dart';
 import 'package:test_app/widgets/snackbar.dart';
+import 'package:test_app/widgets/stack.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: FormsWidget(),
+      home: StackedWidget(),
     );
   }
 }
