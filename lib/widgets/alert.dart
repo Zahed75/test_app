@@ -24,7 +24,10 @@ Future<void> _showMyDialog(BuildContext context) async {
     context: context,
     builder: (BuildContext context) {
       return AlertDialog(
-        backgroundColor: Colors.grey,
+        // backgroundColor: Colors.grey,
+        elevation: 0,
+        scrollable: true,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         title: Text('Ghorur Gash'),
         content: SingleChildScrollView(
           child: ListBody(
