@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/widgets/alert.dart';
+import 'package:test_app/widgets/bottomSheet.dart';
+import 'package:test_app/widgets/drawer.dart';
 
 class BottomNaviWidget extends StatefulWidget {
   const BottomNaviWidget({super.key});
@@ -10,25 +13,31 @@ class BottomNaviWidget extends StatefulWidget {
 class _BottomNaviWidgetState extends State<BottomNaviWidget> {
   int selectedIndex = 0;
 
-  final List<Widget> widgets = [
-    Text('Home'),
-    Text('Search'),
-    Text('Add'),
-    Text('Profile'),
-    Text('Settings'),
-  ];
+  // final List<Widget> widgets = [
+  //   Text('Home'),
+  //   Text('Search'),
+  //   Text('Add'),
+  //   Text('Profile'),
+  //   Text('Settings'),
+  // ];
+
+  PageController pageController = PageController();
 
   void onTapped(int index) {
     setState(() {
       selectedIndex = index;
     });
+    pageController.jumpToPage(index);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Bottom Navigation')),
-      body: Center(child: widgets[selectedIndex]),
+      // appBar: AppBar(title: Text('Bottom Navigation')),
+      body: PageView(
+        controller: pageController,
+        children: [AlertWidget(), BottomSheetWidget(), DrawerWidget()],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         selectedItemColor: Colors.green,
