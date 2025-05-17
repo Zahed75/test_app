@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/widgets/alert.dart';
+import 'package:test_app/widgets/bottomSheet.dart';
 import 'package:test_app/widgets/button.dart';
 import 'package:test_app/widgets/dismissible.dart';
 import 'package:test_app/widgets/drawer.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: AlertWidget(),
+      home: BottomSheetWidget(),
     );
   }
 }
