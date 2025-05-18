@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/Fragment/homeFragment.dart';
 
 class TabBarViewWidget extends StatefulWidget {
   const TabBarViewWidget({super.key});
@@ -31,7 +32,7 @@ class _TabBarViewWidgetState extends State<TabBarViewWidget> {
         ),
         body: TabBarView(
           children: [
-            Center(child: Text('Home Page')),
+            Center(child: HomeFragment()),
             Center(child: Text('Messages Page')),
             Center(child: Text('Notifications Page')),
             Center(child: Text('Map Page')),
