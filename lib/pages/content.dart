@@ -37,7 +37,7 @@ class Content extends StatelessWidget {
           Positioned(
             top: 20,
             left: 15,
-            child: Container(
+            child: SizedBox(
               height: 30,
               child: Image.asset('assets/images/Visa_Logo.png'),
             ),
@@ -78,7 +78,7 @@ class Content extends StatelessWidget {
           ),
           Positioned(
             right: 10,
-            child: Container(
+            child: SizedBox(
               height: 80,
               child: Image.asset('assets/images/chip.png'),
             ),

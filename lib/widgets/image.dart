@@ -9,7 +9,7 @@ class ImageWidget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Qurbani Express')),
       body: Center(
-        child: Container(
+        child: SizedBox(
           height: 200,
           width: 300,
 
