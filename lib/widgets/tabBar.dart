@@ -29,6 +29,16 @@ class _TabBarViewWidgetState extends State<TabBarViewWidget> {
             ],
           ),
         ),
+        body: TabBarView(
+          children: [
+            Center(child: Text('Home Page')),
+            Center(child: Text('Messages Page')),
+            Center(child: Text('Notifications Page')),
+            Center(child: Text('Map Page')),
+            Center(child: Text('Payments Page')),
+            Center(child: Text('Logout Page')),
+          ],
+        ),
       ),
     );
   }
