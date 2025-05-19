@@ -39,6 +39,10 @@ dependencies:
   cached_network_image: ^3.4.1
   image_picker: ^1.1.2
   image_picker_ios: ^0.8.12+2
+  geolocator: ^14.0.0
+  fluttertoast: ^8.2.12
+  geolocator_apple: ^2.3.13
+  
 
 dev_dependencies:
   flutter_test:

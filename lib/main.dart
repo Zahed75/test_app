@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/pages/home.dart';
 import 'package:test_app/widgets/imagePicker.dart';
+import 'package:test_app/widgets/location.dart';
 import 'package:test_app/widgets/tabBar.dart';
 
 void main() => runApp(MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: ImagePickerDart(),
+      home: LocationWidget(),
     );
   }
 }
